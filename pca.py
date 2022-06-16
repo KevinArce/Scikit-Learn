@@ -40,3 +40,16 @@ if __name__ == "__main__":
     # plot PCA components
     plt.plot(range(len(pca.explained_variance_)), pca.explained_variance_ratio_) # plot explained variance ratio 
     plt.show() # show plot
+
+    logistic = LogisticRegression(solver='lbfgs') # create logistic regression object with solver lbfgs
+
+    # train logistic regression model
+    dt_train = pca.transform(X_train) # transform training data using PCA 
+    dt_test = pca.transform(X_test) # transform testing data using PCA
+    logistic.fit(dt_train, y_train) # fit logistic regression model to training data 
+    print("(PCA) Logistic regression score:", logistic.score(dt_test, y_test)) # print logistic regression score 
+
+    dt_train = ipca.transform(X_train) # transform training data using IncrementalPCA
+    dt_test = ipca.transform(X_test) # transform testing data using IncrementalPCA
+    logistic.fit(dt_train, y_train) # fit logistic regression model to training data
+    print("(IPCA) Logistic regression score:", logistic.score(dt_test, y_test)) # print logistic regression score 
