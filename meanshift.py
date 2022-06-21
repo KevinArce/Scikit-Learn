@@ -17,4 +17,5 @@ if __name__ == "__main__": # if this file is run directly, run the following cod
 
     print("="*80)
     dataset['meanshift'] = meanshift.labels_ # add cluster labels to dataset 
-    print(dataset) # print dataset with cluster labels
+    print(dataset) # print dataset with cluster labels added to it
+    

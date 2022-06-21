@@ -1,3 +1,9 @@
+# Dimensionality Reduction, ML can be applied not for the purposes of predicting a value, 
+# but in the sense of transforming data from a highdimensional representation to a low-dimensional representation. 
+# Take, for example, the vast toxicity dataset we worked with in the previous chapters. We could apply a method
+# such as Principal Component Analysis (PCA) to reduce the 10+ columns of features
+# down to only two or three columns by combining the importance of these features together.
+
 import pandas as pd # data processing, CSV file I/O (excel) 
 import sklearn # machine learning library 
 import matplotlib.pyplot as plt # plotting library 
@@ -13,7 +19,7 @@ from sklearn.model_selection import train_test_split # train/test split
 
 if __name__ == "__main__":
     # load data 
-    dt_heart = pd.read_csv("data/heart.csv") 
+    dt_heart = pd.read_csv("data/heart.csv") # load data from heart.csv
 
     print(dt_heart.head(5)) # print first 5 rows
 
