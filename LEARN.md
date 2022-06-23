@@ -1,0 +1,1 @@
+Machine learning project based on sklearn library. ML as a field of research concerning the development of mathematically optimized models using computer code, which learn or generalize from historical data to unlock useful insights and make predictions.
