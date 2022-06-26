@@ -1,6 +1,8 @@
 # Scikit-Learn
 Machine learning project based on sklearn library.
 ML as a field of research concerning the development of mathematically optimized models using computer code, which learn or generalize from historical data to unlock useful insights and make predictions.
+This Project is meant to provide snippets and comments on features of the Scikit-Learn library.
+
 
 ## Getting Started
 
