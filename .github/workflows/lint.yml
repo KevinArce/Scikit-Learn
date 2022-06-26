@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+  workflow_dispatch:
+
+jobs:
+  Lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - working-directory: ./notebooks
+      - uses: ResearchSoftwareActions/EnsureCleanNotebooksAction@1.1
+        with:
+          disable-checks: outputs,execution_count
