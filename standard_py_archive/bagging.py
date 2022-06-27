@@ -25,3 +25,4 @@ if __name__ == "__main__": # if this file is run directly, run the following cod
     bag_pred = bag_class.predict(X_test) # predict y values using BaggingClassifier
     print("="*80)
     print("Bagging Classifier Accuracy:", accuracy_score(y_test, bag_pred)) # print accuracy score of BaggingClassifier
+    
