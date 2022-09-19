@@ -19,7 +19,7 @@ if __name__ == "__main__": # if this file is run directly, run the following cod
     print(y.shape) # print y matrix shape
 
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42) # split data into training and testing sets with 30% test size and random state 42 
-    
+
     # linear regression 
     modelLinear = LinearRegression().fit(X_train, y_train) # create linear regression object and fit to training data 
     y_predict_linear = modelLinear.predict(X_test) # predict y values using linear regression model 
@@ -52,11 +52,11 @@ if __name__ == "__main__": # if this file is run directly, run the following cod
     print("Linear regression coefficients:", modelLinear.coef_) # print linear regression coefficients
     # Divider 
     print("="*80)
-    
+
     # print lasso coefficients
     print("Lasso coefficients:", modelLasso.coef_) # print lasso coefficients
     # Divider 
     print("="*80)
-    
+
     # print ridge coefficients
     print("Ridge coefficients:", modelRidge.coef_) # print ridge coefficients
